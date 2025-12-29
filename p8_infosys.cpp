@@ -235,12 +235,17 @@ void solve()
     map<char, int> mp;
     for (char x : s)
         mp[x]++;
+    bool found = false;
     for (char x : s)
     {
         if (mp[x] == 1)
         {
+            found = true;
             print(x);
             return;
         }
+    }
+    if(!found){
+        print(-1);
     }
 }
