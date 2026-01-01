@@ -18,6 +18,8 @@ using oset = tree<T, null_type, less<T>, rb_tree_tag, tree_order_statistics_node
 template <class key, class value, class cmp = less_equal<key>>
 using omap = tree<key, value, cmp, rb_tree_tag, tree_order_statistics_node_update>;
 
+
+
 // 1D Stuff
 using ll = long long;
 using ld = long double;
